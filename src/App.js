@@ -64,6 +64,14 @@ function App() {
               <li>Implement any new changes specified by stakeholders</li>
             </ol>
           </div>
+          <div id="lighthouse" className={(selectedTab === "lighthouse" ? 'selected' : 'not-selected')}>
+          <ol>
+              <li>Performance: 100</li>
+              <li>Accessability: 100</li>
+              <li>Best Practices: 100</li>
+              <li>SEO: 100</li>
+            </ol>
+          </div>
         </div>
       </div>
     </div>

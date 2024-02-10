@@ -58,9 +58,10 @@ ol li {
   font-weight: bold;
   font-size: calc(10px + 0.6vmin);
   text-align: left;
+  color:  rgb(86, 163, 48);
 }
 
-li:hover {
+ul li:hover {
   cursor: pointer
 }
 
