@@ -48,15 +48,46 @@ ul li {
   display: inline;
 }
 
-li {
+ul li {
   margin: 40px;
   font-weight: bold;
   font-size: calc(10px + 1vmin);
+}
 
+ol li {
+  font-weight: bold;
+  font-size: calc(10px + 0.6vmin);
+  text-align: left;
 }
 
 li:hover {
   cursor: pointer
 }
 
+.not-selected {
+  display: none;
+}
 
+.selected {
+  display: inline-block;
+}
+
+#desc {
+  margin-top: 50px;
+  font-size: calc(10px + 0.75vmin);
+  font-weight: bold;
+  color:  rgb(86, 163, 48);
+  max-width: 1000px;
+}
+
+#goals {
+  margin-top: 50px
+}
+
+.li-selected {
+  text-decoration: underline;
+}
+
+.li-not-selected {
+  text-decoration: none;
+}
