@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        Vision Aid Partners - Spring 2024
+        Vision-Aid Partners - Spring 2024
       </header>
       <div>
         <ul>
@@ -40,12 +40,13 @@ function App() {
               Aid organization and its partners in hospitals around India.
             </p>
             <p>
-              The application we will be improving allows for hospitals and partner organizations to track disbursement of
-              devices used to by the visually impaired, in a variety of situations.
+              The application we will be improving is a web-based portal that helps coordinate all hospitals partnering with Vision Aid
+              for providing diagnosis, counseling, training and optical devises for the visually impaired. It also provides aggregate
+              customizable reports for each hospital and overall.
             </p>            
           </div>
           <div className={(selectedTab === "team" ? 'selected' : 'not-selected')}>
-            <TeamMember imagePath={blank} name="Amber Molina" role="Team Lead" />
+            <TeamMember imagePath={amolina} name="Amber Molina" role="Team Lead" />
             <TeamMember imagePath={abieber} name="Austin Bieber" role="Tech Lead" />
             <TeamMember imagePath={blank} name="Christin Lin" role="Frontend" />
             <TeamMember imagePath={blank} name="Nasa Quba" role="Backend" />
