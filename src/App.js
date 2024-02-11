@@ -2,6 +2,7 @@ import './App.css';
 import TeamMember from './components/TeamMember/TeamMember';
 import blank from './images/blank.png';
 import abieber from './images/abieber.jpeg';
+import amolina from './images/amolina.jpg';
 import { useState } from 'react';
 
 function App() {
