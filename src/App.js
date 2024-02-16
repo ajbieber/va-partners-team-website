@@ -1,9 +1,9 @@
 import './App.css';
 import TeamMember from './components/TeamMember/TeamMember';
-import blank from './images/blank.png';
 import abieber from './images/abieber.jpeg';
 import amolina from './images/amolina.jpg';
 import chris from './images/chris.jpg';
+import nasa from './images/nasa.png';
 import { useState } from 'react';
 
 function App() {
@@ -55,7 +55,7 @@ function App() {
             <TeamMember imagePath={amolina} name="Amber Molina" role="Team Lead" />
             <TeamMember imagePath={abieber} name="Austin Bieber" role="Tech Lead" />
             <TeamMember imagePath={chris} name="Christin Lin" role="Frontend" />
-            <TeamMember imagePath={blank} name="Nasa Quba" role="Backend" />
+            <TeamMember imagePath={nasa} name="Nasa Quba" role="Backend" />
           </div>
           <div id="goals" className={(selectedTab === "goals" ? 'selected' : 'not-selected')}>
             <p>Our goals for this semeter are as follows:</p>
