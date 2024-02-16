@@ -3,6 +3,7 @@ import TeamMember from './components/TeamMember/TeamMember';
 import blank from './images/blank.png';
 import abieber from './images/abieber.jpeg';
 import amolina from './images/amolina.jpg';
+import chris from './images/chris.jpg';
 import { useState } from 'react';
 
 function App() {
@@ -31,6 +32,10 @@ function App() {
             onClick={() => setSelectedTab("lighthouse")}
             className={(selectedTab === "lighthouse" ? 'li-selected' : 'li-not-selected')}
           >Lighthouse Scores</li>
+          <li
+            onClick={() => setSelectedTab("video")}
+            className={(selectedTab === "video" ? 'li-selected' : 'li-not-selected')}
+          >Video</li>
         </ul>
 
         <div id="body">
@@ -49,7 +54,7 @@ function App() {
           <div className={(selectedTab === "team" ? 'selected' : 'not-selected')}>
             <TeamMember imagePath={amolina} name="Amber Molina" role="Team Lead" />
             <TeamMember imagePath={abieber} name="Austin Bieber" role="Tech Lead" />
-            <TeamMember imagePath={blank} name="Christin Lin" role="Frontend" />
+            <TeamMember imagePath={chris} name="Christin Lin" role="Frontend" />
             <TeamMember imagePath={blank} name="Nasa Quba" role="Backend" />
           </div>
           <div id="goals" className={(selectedTab === "goals" ? 'selected' : 'not-selected')}>
@@ -74,6 +79,15 @@ function App() {
               <li>SEO: 100</li>
             </ol>
           </div>
+
+<div style="padding:56.25% 0 0 0;position:relative;">
+<iframe src="https://player.vimeo.com/video/913052661?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="VA-Partners_MiniPresentation">
+</iframe>
+</div>
+<script src="https://player.vimeo.com/api/player.js">
+</script>
+
+
         </div>
       </div>
     </div>
