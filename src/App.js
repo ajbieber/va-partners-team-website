@@ -8,6 +8,7 @@ import { useState } from 'react';
 
 function App() {
   const [selectedTab, setSelectedTab] = useState("description");
+  const [showVideo, setShowVideo] = useState(false);
 
   return (
     <div className="App">
@@ -33,7 +34,10 @@ function App() {
             className={(selectedTab === "lighthouse" ? 'li-selected' : 'li-not-selected')}
           >Lighthouse Scores</li>
           <li
-            onClick={() => setSelectedTab("video")}
+            onClick={() => {
+              setSelectedTab("video");
+              setShowVideo(true);
+            }}
             className={(selectedTab === "video" ? 'li-selected' : 'li-not-selected')}
           >Video</li>
         </ul>
@@ -58,7 +62,7 @@ function App() {
             <TeamMember imagePath={nasa} name="Nasa Quba" role="Backend" />
           </div>
           <div id="goals" className={(selectedTab === "goals" ? 'selected' : 'not-selected')}>
-            <p>Our goals for this semeter are as follows:</p>
+            <p>Our goals for this semester are as follows:</p>
             <p></p>
             <p></p>
             <ol>
@@ -74,10 +78,29 @@ function App() {
           <div id="lighthouse" className={(selectedTab === "lighthouse" ? 'selected' : 'not-selected')}>
             <ol>
               <li>Performance: 100</li>
-              <li>Accessability: 100</li>
+              <li>Accessibility: 100</li>
               <li>Best Practices: 100</li>
               <li>SEO: 100</li>
             </ol>
+          </div>
+          <div id="video" className={(selectedTab === "video" ? 'selected' : 'not-selected')}>
+            <div className="App">
+              <header className="App-header">
+                Vision-Aid Partners - Spring 2024
+              </header>
+              <div id="video">
+                <div style={{ padding: '56.25% 0 0 0', position: 'relative' }}>
+                  <iframe
+                    src="https://player.vimeo.com/video/913052661?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                    frameborder="0"
+                    allow="autoplay; fullscreen; picture-in-picture"
+                    style={{ position: 'absolute', top: '0', left: '0', width: '100%', height: '100%' }}
+                    title="VA-Partners_MiniPresentation"
+                  ></iframe>
+                </div>
+                <script src="https://player.vimeo.com/api/player.js"></script>
+              </div>
+            </div>
           </div>
         </div>
       </div>
