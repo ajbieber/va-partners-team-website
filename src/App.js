@@ -8,7 +8,6 @@ import { useState } from 'react';
 
 function App() {
   const [selectedTab, setSelectedTab] = useState("description");
-  const [showVideo, setShowVideo] = useState(false);
 
   return (
     <div className="App">
@@ -36,7 +35,6 @@ function App() {
           <li
             onClick={() => {
               setSelectedTab("video");
-              setShowVideo(true);
             }}
             className={(selectedTab === "video" ? 'li-selected' : 'li-not-selected')}
           >Video</li>
@@ -92,9 +90,8 @@ function App() {
                 <div style={{ padding: '56.25% 0 0 0', position: 'relative' }}>
                   <iframe
                     src="https://player.vimeo.com/video/913052661?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-                    frameborder="0"
                     allow="autoplay; fullscreen; picture-in-picture"
-                    style={{ position: 'absolute', top: '0', left: '0', width: '100%', height: '100%' }}
+                    style={{ position: 'absolute', top: '0', left: '0', width: '100%', height: '100%', border:'0px', }}
                     title="VA-Partners_MiniPresentation"
                   ></iframe>
                 </div>
