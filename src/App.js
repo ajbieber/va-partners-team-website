@@ -1,9 +1,9 @@
 import './App.css';
 import TeamMember from './components/TeamMember/TeamMember';
-import abieber from './images/abieber.jpeg';
-import amolina from './images/amolina.jpg';
-import chris from './images/chris.jpg';
-import nasa from './images/nasa.png';
+import austin from './images/austin.webp';
+import amber from './images/amber.webp';
+import chris from './images/chris.webp';
+import nasa from './images/nasa.webp';
 import { useState } from 'react';
 
 function App() {
@@ -54,8 +54,8 @@ function App() {
             </p>            
           </div>
           <div className={(selectedTab === "team" ? 'selected' : 'not-selected')}>
-            <TeamMember imagePath={amolina} name="Amber Molina" role="Team Lead" />
-            <TeamMember imagePath={abieber} name="Austin Bieber" role="Tech Lead" />
+            <TeamMember imagePath={amber} name="Amber Molina" role="Team Lead" />
+            <TeamMember imagePath={austin} name="Austin Bieber" role="Tech Lead" />
             <TeamMember imagePath={chris} name="Christin Lin" role="Frontend" />
             <TeamMember imagePath={nasa} name="Nasa Quba" role="Backend" />
           </div>

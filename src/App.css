@@ -58,7 +58,7 @@ ol li {
   font-weight: bold;
   font-size: calc(10px + 0.6vmin);
   text-align: left;
-  color:  rgb(86, 163, 48);
+  color:  rgb(0, 0, 0);
 }
 
 ul li:hover {
@@ -79,6 +79,10 @@ ul li:hover {
   font-weight: bold;
   color:  rgb(86, 163, 48);
   max-width: 1000px;
+}
+
+#desc p {
+  color: black;
 }
 
 #goals {
